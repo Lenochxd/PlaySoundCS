@@ -33,7 +33,14 @@ public static class Program
         };
 
         // Régler le volume à 50% (NO SHITTT)
-        mediaPlayer.Volume = 50;
+        int volume = 50; // Default volume
+
+        if (args.Length > 1 && int.TryParse(args[1], out int parsedVolume))
+        {
+            volume = parsedVolume;
+        }
+
+        mediaPlayer.Volume = volume;
 
         // Jouer le fichier
         mediaPlayer.Play();

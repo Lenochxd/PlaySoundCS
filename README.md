@@ -27,9 +27,9 @@ This silly project demonstrates how to play an MP3 file using LibVLCSharp in a C
     ```sh
     dotnet build
     ```
-4. Run the project with the path to an MP3 file as an argument:
+4. Run the project with the path to an MP3 file and optionally an integer to specify the volume (0-100) as arguments. If the volume is not specified, it defaults to 50:
     ```sh
-    dotnet run -- "path/to/your/file.mp3"
+    dotnet run -- "path/to/your/file.mp3" 50
     ```
 
 
